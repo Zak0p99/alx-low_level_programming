@@ -1,0 +1,3 @@
+#!/bin/bash
+BASENAME="${CFILE%.*}"
+gcc -c "$CFILE" -o "$BASENAME.o"

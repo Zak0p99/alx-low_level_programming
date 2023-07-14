@@ -1,25 +1,30 @@
-#include <stdio.h>
+#include <unistd.h>
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-    int i, j;
+    int digit1, digit2;
 
-    for (i = 0; i < 9; i++)
+    for (digit1 = 0; digit1 < 9; digit1++)
     {
-        for (j = i + 1; j <= 9; j++)
+        for (digit2 = digit1 + 1; digit2 <= 9; digit2++)
         {
-            putchar(i + '0');
-            putchar(j + '0');
+            putchar((digit1 % 10) + '0');
+            putchar((digit2 % 10) + '0');
 
-            if (i != 8 || j != 9)
+            if (digit1 != 8 || digit2 != 9)
             {
                 putchar(',');
-                putchar('\t');
+                putchar(' ');
             }
         }
     }
 
     putchar('\n');
 
-    return 0;
+    return (0);
 }

@@ -19,7 +19,7 @@ int main(void)
             if (i != 8 || j != 9)
             {
                 putchar(',');
-                putchar(' ');
+                putchar('\t');
             }
         }
     }
@@ -27,4 +27,4 @@ int main(void)
     putchar('\n');
 
     return 0;
-}
+}}
